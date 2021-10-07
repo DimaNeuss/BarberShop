@@ -12,55 +12,63 @@
 </head>
 <body>
     <header>
-        <!--navbar-->
-        <nav class="navbar">
-            <img src="./images/Logo.jpg" alt="Имя компании">
-            <ul class="nav-link">
-                <li><a href="#about" class="nav-links">О нас</a></li>
-                <li><a href="#price" class="nav-links">Услуги и цены</a></li>
-                <li><a href="#masters" class="nav-links">Мастера</a></li>
-                <li><a href="#footer" class="nav-links">Контакты</a></li>
-            </ul>
-            <div class="box-btn">
-                <a href="tel:+380441111111" class="phone-link">+38 044 111 11 11</a>
-                <a href="#footer" class="primary-btn">онлайн-запись</a>
+        <section class="header">
+            <!--sidebar-->
+            <aside class="sidebar">
+                <div class="">
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Youtube</a>
+                </div>
+            </aside>
+            <!--navbar-->
+            <nav class="navbar">
+                <div class="nav-holder">
+                    <svg class="logo-img">
+                        <use href="./images/icons/sprite.svg#icon-Logo"></use>
+                    </svg>
+                    <ul class="nav-link">
+                        <li><a href="#about" class="nav-links">О нас</a></li>
+                        <li><a href="#price" class="nav-links">Услуги и цены</a></li>
+                        <li><a href="#masters" class="nav-links">Мастера</a></li>
+                        <li><a href="#footer" class="nav-links">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="box-btn">
+                    <a href="tel:+380441111111" class="phone-link">+38 044 111 11 11</a>
+                    <a href="#footer" class="primary-btn">онлайн-запись</a>
+                </div>
+            </nav>
+            
+            <!--slider-->
+            <div class="slider">
+                <div class="slide">
+                    <span lang="en" class="subtitle-secondary">A hair salon for men in Kyiv</span>
+                    <h1 class="hero-title">BarberShop</h1>
+                    <p class="hero-discription-slider">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со
+                        вкусом.</p>
+                </div>
+                <!--<div class="slide">
+                    <span lang="en" class="subtitle-secondary">A hair salon for men in Kyiv</span>
+                    <h1 class="hero-title">BarberShop</h1>
+                    <p class="hero-discription-slider">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со
+                        вкусом.</p>
+                </div>
+                <div class="slide">
+                    <span lang="en" class="subtitle-secondary">A hair salon for men in Kyiv</span>
+                    <h1 class="hero-title">BarberShop</h1>
+                    <p class="hero-discription-slider">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со
+                        вкусом.</p>
+                </div> -->                
             </div>
-        </nav>
-
-        <!--sidebar-->   
-        <aside class="sidebar">
-            <div class="">
-                <a href="#" class="social-link">Instagram</a>
-                <a href="#" class="social-link">Youtube</a>
-            </div>
-        </aside>
-        <!--slider-->
-        <div class="slider">
-            <div class="slide">
-                <span lang="en" class="subtitle-secondary">A hair salon for men in Kyiv</span>
-                <h1 class="hero-title">BarberShop</h1>
-                <p class="hero-discription-slider">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>                
-            </div>
-            <div class="slide">
-                <span lang="en" class="b-secondary">A hair salon for men in Kyiv</span>
-                <h1 class="hero-title">BarberShop</h1>
-                <p class="hero-discription-slider">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
-            </div>
-            <div class="slide">
-                <span lang="en" class="subtitle-secondary">A hair salon for men in Kyiv</span>
-                <h1 class="hero-title">BarberShop</h1>
-                <p class="hero-discription-slider">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
-            </div>
-        </div>        
-        
+        </section>       
     </header>
     <!--main content-->
     <main class="layout">
         <!--about us-->
-        <section class="section-box" id="about-section">
+        <section class="section-box about-section" id="about-section">
             <div class="about_image-box">
-                <img src="./images/img 1.jpg" alt="">
-                <img src="./images/img 2.jpg" alt="">
+                <img src="./images/img1.jpg" alt="">
+                <img src="./images/img2.jpg" alt="">
             </div>
             <div class="discription-container">
                 <span class="subtitle-primary">О НАС</span>
@@ -70,11 +78,11 @@
                 и жаждет перемен. И когда ты попадешь в руки нашего мастера,
                 то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда
                 готовы усовершенствовать каждого, кто к нам приходит!</p>
-                <a href="#footer" class="primary-btn dark">онлайн-запись</a>
+                <a href="#footer" class="primary-btn primary-btn_dark">онлайн-запись</a>
             </div>
         </section>
         <!--price-->
-        <section class="section-box" id="price-section">
+        <section class="section-box price-section" id="price-section">
             <span class="subtitle-secondary">Проведи время в компании лучших мастеров</span>
             <h2 class="section-title lighten">Услуги и цены</h2>
             <div class="price-box">
@@ -110,12 +118,12 @@
                         <p>Камуфлирование седины</p>
                         <span>от 200 грн.</span>
                 </ul>
-                <a href="#footer" class="primary-btn dark">онлайн-запись</a>
             </div>
+            <a href="#footer" class="primary-btn dark">онлайн-запись</a>            
         </section>
 
         <!--why us-->
-        <section class="section-box" id="why-section">
+        <section class="section-box why-section" id="why-section">
             <div class="number-container"> 
                 <div class="number-box">
                     <p>600</p>
@@ -132,69 +140,133 @@
                 <div class="number-box">
                     <p>100</p>
                     <span>Подарков постоянным клиентам</span>
-                </div>
-                <div class="discription-container">
-                    <span class="suptitle-primary">старая традиционная школа</span>
+                </div>                
+            </div>
+            <div class="discription-container">
+                    <span class="subtitle-primary">старая традиционная школа</span>
                     <h2 class="section-title">Почему приходят именно к нам?</h2>
                     <h3 class="section-subtitle">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</h3>
-                </div>
-            </div>   
+            </div>
         </section>
 
         <!--masters-->
-        <section class="section-box" id="masters-section">
-            <span class="suptitle-primary">для настоящих ценителей атмосферы</span>
+        <section class="section-box masters-section" id="masters-section">
+            <span class="subtitle-primary">для настоящих ценителей атмосферы</span>
             <h2 class="section-title">Наши мастера</h2>
             <ul class="master-list">
                 <li class="master-card">
-                    <img src="./images/john.jpg" alt="John Smith photo">
+                    <img src="./images/masters/john.jpg" alt="John Smith photo">
                     <p>John Smith</p>
                     <span>Extreme Barber</span>
-                    <div class="master-social-box"><a href="" class="master-social-link"></a><a href="" class="master-social-link"></a><a href="" class="master-social-link"></a><a href="" class="master-social-link"></a></div>
+                    <div class="master-social-box">
+                        <a href="" class="master-social-link">
+                            <svg>
+                                <use href="./images/icons/sprite.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="master-social-link">
+                            <svg>
+                                <use href="./images/icons/sprite.svg#icon-twitter-1"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="master-social-link">
+                            <svg>
+                                <use href="./images/icons/sprite.svg#icon-facebook-1"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="master-social-link">
+                            <svg>
+                                <use href="./images/icons/sprite.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </a>
+                    </div>
                 </li>
                 <li class="master-card">
-                    <img src="./images/michele.jpg" alt="Michele Doe photo">
+                    <img src="./images/masters/michele.jpg" alt="Michele Doe photo">
                     <p>Michele Doe</p>
                     <span>Extreme Barber</span>
-                    <div class="master-social-box"><a href="" class="master-social-link"></a><a href="" class="master-social-link"></a><a href="" class="master-social-link"></a><a href="" class="master-social-link"></a></a></div>
+                    <div class="master-social-box">
+                        <a href="" class="master-social-link">
+                            <svg>
+                                <use href="./images/icons/sprite.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="master-social-link">
+                            <svg>
+                                <use href="./images/icons/sprite.svg#icon-twitter-1"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="master-social-link">
+                            <svg>
+                                <use href="./images/icons/sprite.svg#icon-facebook-1"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="master-social-link">
+                            <svg>
+                                <use href="./images/icons/sprite.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </a>
+                    </div>
                 </li>
                 <li class="master-card">
-                    <img src="./images/alan.jpg" alt="Alan Black photo">
+                    <img src="./images/masters/alan.jpg" alt="Alan Black photo">
                     <p>Alan Black</p>
                     <span>Extreme Barber</span>
-                    <div class="master-social-box"><a href="" class="master-social-link"></a><a href="" class="master-social-link"></a><a href="" class="master-social-link"></a><a href="" class="master-social-link"></a></div>
+                    <div class="master-social-box">
+                        <a href="" class="master-social-link">
+                            <svg>
+                                <use href="./images/icons/sprite.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="master-social-link">
+                            <svg>
+                                <use href="./images/icons/sprite.svg#icon-twitter-1"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="master-social-link">
+                            <svg>
+                                <use href="./images/icons/sprite.svg#icon-facebook-1"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="master-social-link">
+                            <svg>
+                                <use href="./images/icons/sprite.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </a>
+                    </div>
                 </li>
             </ul>
         </section>
         <!--barber-->
         <section class="section-box" id="barber-section">
-            <span class="suptitle-primary">для настоящих ценителей атмосферы</span>
+            <span class="subtitle-primary">На латинском языке “барба” означает “борода”</span>
             <div class="barber-image">
-                <img src="./images/Rectangle1.jpg" alt="стрижка машинкой">
-                <img src="./images/Rectangle2.jpg" alt="намазывание пены">
-                <img src="./images/Rectangle3.jpg" alt="пропаривание лица">
-                <img src="./images/Rectangle4.jpg" alt="стрижка опасной бритвой">
+                <img src="./images/gallery/Rectangle1.jpg" alt="стрижка машинкой">
+                <img src="./images/gallery/Rectangle2.jpg" alt="намазывание пены">
+                <img src="./images/gallery/Rectangle3.jpg" alt="пропаривание лица">
+                <img src="./images/gallery/Rectangle4.jpg" alt="стрижка опасной бритвой">
             </div>            
         </section>
     </main>
     <!--footer-->
     <footer class="footer" id="footer">
-        <div>
+        <div class="footer_form">
             <h2 class="section-title lighten">Онлайн-запись</h2>
             <form action="">
-                <input type='submit' class="primary-btn" />
+                <input type='submit' class="primary-btn primary-btn_dark"/>
             </form>
         </div>
         <div class="footer-contacts">
             <h2 class="section-title lighten">Контакты</h2>
             <div class="contacts-box">
-                <adress></adress>
-                <a href="tel:"></a>
-                <a href="mailto:"></a>
+                <adress>ул. Васильковая, 7А <br>Киев, 08132
+                </adress>
+                <a href="tel:+380441111111">+38 044 111 11 11</a>
+                <a href="mailto:barbershop@email.com">barbershop@email.com</a>
             </div>
         
             <div class="schedule-box">
-                <span class="suptitle-secondary">Время работы</span>
+                <span class="subtitle-secondary">Время работы</span>
                 <p>Ежедневно с 9:00 до 22:00</p>
             </div>        
         </div>
