@@ -28,11 +28,18 @@ a {
 a:hover {
   color: var(--primary-color);
 }
+@keyframes infinteRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .header {
   height: 100vh;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
 }
 .section-box {
   width: 100%;
@@ -60,6 +67,9 @@ a:hover {
   width: 68px;
   height: 56px;
   fill: rgba(48, 48, 48, 1);
+  animation-name: infinteRotate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
 }
 .nav-link {
   display: flex;
@@ -244,6 +254,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   flex-basis: 300px;
+  text-align: center;
 }
 .masters-section {
   background: #f7f7f7;
@@ -255,7 +266,6 @@ a:hover {
 .master-card p {
   font-size: 18px;
   line-height: 1.4;
-  text-align: center;
 }
 .master-card span {
   display: block;
@@ -287,6 +297,29 @@ a:hover {
 .master-social-link svg {
   width: 20px;
   fill: var(--text-title);
+}
+.barber-section {
+}
+.barber-image {
+  display: flex;
+  justify-content: space-between;
+}
+.galerry-card {
+  position: relative;
+  overflow: hidden;
+}
+.gallerry-discription {
+  width: 100%;
+  height: 360px;
+  background-color: rgb(0 0 0 / 75%);
+  color: var(--text-title-lighten);
+  padding: 20px;
+  position: absolute;
+  bottom: 100%;
+  transition: transform 1s linear;
+}
+.galerry-card:hover .gallerry-discription {
+  transform: translateY(100%);
 }
 .footer {
   width: 100%;
