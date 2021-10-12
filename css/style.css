@@ -195,6 +195,7 @@ a:hover {
 }
 .price-box {
   display: flex;
+  margin-bottom: 30px;
 }
 .price-list {
   width: 49%;
@@ -290,6 +291,7 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
+
 .master-social-link:hover svg,
 .master-social-link:focus svg {
   fill: var(--primary-color);
@@ -298,15 +300,19 @@ a:hover {
   width: 20px;
   fill: var(--text-title);
 }
-.barber-section {
-}
+
 .barber-image {
   display: flex;
   justify-content: space-between;
+  margin-top: 45px;
 }
 .galerry-card {
   position: relative;
   overflow: hidden;
+  width: 20%;
+}
+.galerry-card img {
+  width: 100%;
 }
 .gallerry-discription {
   width: 100%;
@@ -333,10 +339,66 @@ a:hover {
   background-position: right, top;
   color: var(--text-secondary);
 }
+.form_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer_form .form-fielfd {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  outline: none;
+  margin-bottom: 45px;
+  width: 100%;
+  color: var(--text-title-lighten);
+}
+.field-label {
+  position: relative;
+  display: inline-block;
+  width: calc(50% - 15px);
+}
+.field-label:hover .form-fielfd,
+.footer_form .form-fielfd:focus {
+  border-color: var(--text-title-lighten);
+}
+.footer_form .form-fielfd:focus + .legend {
+  transform: translate(-2px, -24px);
+}
+.legend {
+  transition: traslate, 0 1s linear;
+  position: absolute;
+  color: rgba(157, 164, 189, 0.4);
+  top: -3px;
+}
+.field-label:hover .legend {
+  color: var(--text-title-lighten);
+}
+textarea.form-fielfd {
+  width: 100%;
+  display: block;
+  resize: none;
+  margin-bottom: 45px;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--text-title-lighten);
+}
+textarea.form-fielfd::placeholder {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
 .footer_form,
 .footer-contacts {
   width: 50%;
   height: inherit;
+  padding-right: 50px;
 }
 .contacts-box {
   padding-left: 50px;
